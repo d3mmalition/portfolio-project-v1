@@ -1,0 +1,11 @@
+@import '../theme/mixins.scss';
+
+header {
+  @include flex(row);
+  align-items: center;
+  justify-content: space-between;
+
+  ul#header-links {
+    @include flex(row);
+  }
+}
