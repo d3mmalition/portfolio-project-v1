@@ -24,7 +24,7 @@ export default function Projects(props) {
   return (
     <Container id={id} component={component} sx={sx}>
       <Typography variant='h2' sx={{mb: 8, textAlign: 'center'}}>
-        Projects I've worked on:
+        Current Projects
       </Typography>
       <List
         className='projects-container'

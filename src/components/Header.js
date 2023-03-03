@@ -39,13 +39,13 @@ export default function Header(props) {
           </Link>
         </ListItem>
          <MenuItem>
-          <Link to='/' component={RouterLink} underline='hover'>
-            Link 1
+          <Link href='https://drive.google.com/file/d/121NLP9gVw63LWE_gwNgM5jfqnCw2-XxG/view?usp=sharing' underline='hover'>
+            Resume
           </Link>
         </MenuItem>
         <MenuItem>
-          <Link to='/' component={RouterLink} underline='hover'>
-            Link 2
+          <Link href='https://www.linkedin.com/in/carrgardnere/' target='_blank' underline='hover'>
+            LinkedIn
           </Link>
         </MenuItem> 
          <MenuItem onClick={toggleDarkMode}>

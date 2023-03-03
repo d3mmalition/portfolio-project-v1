@@ -14,7 +14,6 @@ import {Box} from '@mui/system';
 import HomeIcon from '@mui/icons-material/Home';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-import RepoLanguages from './RepositoryLanguage';
 import RepositoryTitle from './RepositoryTitle';
 
 export default function Repository(props) {
@@ -31,17 +30,17 @@ export default function Repository(props) {
   const githubUrl = html_url;
   const live_site_url = live_site;
 
-  const [languages, setLanguages] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
+  // const [languages, setLanguages] = useState({});
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    fetch(languages_url)
-      .then((response) => response.json())
-      .then((data) => {
-        setLanguages(data);
-        setIsLoading(false);
-      });
-  }, [languages_url]);
+  // useEffect(() => {
+  //   fetch(languages_url)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setLanguages(data);
+  //       setIsLoading(false);
+  //     });
+  // }, [languages_url]);
 
   return (
     <CardContent className='repository-container' sx={{p: 0, m: 0}}>
@@ -58,7 +57,7 @@ export default function Repository(props) {
         className='repository-language-container'
         sx={{mb: 8, gap: 2, flexWrap: 'wrap'}}
       >
-        {isLoading ? 'Loading...' : <RepoLanguages languages={languages} />}
+        
       </Box>
       {/* <Divider sx={{mb: 4}} /> */}
       <CardActions

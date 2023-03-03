@@ -1,10 +1,9 @@
 import {createTheme, responsiveFontSizes} from '@mui/material/styles';
 
 // Seft-hosted fonts
-import MinigapLight from './fonts/MinigapLight.woff';
-import MinigapLight2 from './fonts/MinigapLight.woff2';
-import MinigapBold from './fonts/MinigapBold.woff';
-import MinigapBold2 from './fonts/MinigapBold.woff2';
+import PoppinsMedium from './fonts/Poppins-Medium.ttf';
+import PoppinsRegular from './fonts/Poppins-Regular.ttf';
+import PoppinsSemiBold from './fonts/Poppins-SemiBold.ttf';
 
 // import {ThemeModeConsumer} from './ThemeModeContext';
 
@@ -15,7 +14,7 @@ let defaultTheme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#FD510C',
+      main: '#1E90FF',
     },
     secondary: {
       main: '#129277',
@@ -32,44 +31,49 @@ let defaultTheme = createTheme({
     success: {
       main: '#129277',
     },
-
     // divider: 'rgba(253,81,12,0.4)',
   },
   typography: {
+    fontFamily: 'Poppins',
     h1: {
-      fontFamily: 'MinigapBold',
+      fontFamily: 'Poppins',
+      fontWeight: 600,
       fontSize: '3.25rem',
       letterSpacing: 1,
     },
     h2: {
-      fontFamily: 'MinigapBold',
+      fontFamily: 'Poppins',
+      fontWeight: 400,
       letterSpacing: 1,
     },
     h3: {
-      fontFamily: 'MinigapBold',
+      fontFamily: 'Poppins',
       letterSpacing: 1,
+      fontWeight: 400,
       fontSize: '1rem',
     },
     h4: {
-      fontFamily: 'MinigapBold',
+      fontFamily: 'Poppins',
       letterSpacing: 1,
+      fontWeight: 600,
       fontSize: '1rem',
     },
     body1: {
-      fontFamily: 'MinigapLight',
+      fontFamily: 'Poppins',
+      fontWeight: 300,
       letterSpacing: 0.75,
     },
     jobTitle: {
-      fontFamily: 'MinigapBold',
+      fontFamily: 'Poppins',
       fontSize: '2rem',
       color: 'primary',
     },
     repositoryLanguage: {
-      fontFamily: 'MinigapBold',
+      fontFamily: 'Poppins',
       textTransformation: 'uppercase',
     },
     repositoryDate: {
-      // fontFamily: 'MinigapBold',
+      // fontFamily: 'PoppinsSemiBold',
       textTransformation: 'uppercase',
     },
   },
@@ -77,17 +81,12 @@ let defaultTheme = createTheme({
     MuiCssBaseline: {
       styleOverrides: `
           @font-face {
-            font-family: 'MinigapLight';
-            src: local(MinigapLight), url(${MinigapLight}) format('woff'),
-              url(${MinigapLight2}) format('woff2);
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-          }
-
-          @font-face {
-            font-family: 'MinigapBold';
-            src: local(MinigapBold), url(${MinigapBold}) format('woff'),
-              url(${MinigapBold2}) format('woff2);
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
+            font-family: 'Poppins';
+            src: url(${PoppinsMedium}) format('truetype'),
+                 url(${PoppinsRegular}) format('truetype'),
+                 url(${PoppinsSemiBold}) format('truetype');
+            font-weight: normal;
+            font-style: normal;
           }
         `,
     },
@@ -95,7 +94,7 @@ let defaultTheme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 8,
-          fontFamily: 'MinigapBold',
+          fontFamily: 'Poppins',
           letterSpacing: 0.75,
         },
       },

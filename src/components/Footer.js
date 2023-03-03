@@ -10,7 +10,7 @@ export default function Footer(props) {
     <footer>
       <Divider />
       <Typography variant='body1' sx={{...sx, textAlign: 'center'}}>
-        © 2023 Emma Carr-Gardner
+        © 2023 emmabuilds.co
       </Typography>
     </footer>
   );

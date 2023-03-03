@@ -1,22 +1,39 @@
 @import './theme//mixins.scss';
 
 @font-face {
-  font-family: 'MinigapLight';
-  src: local('MinigapLight'),
-    url('./theme/fonts/MinigapLight.woff') format('woff'),
-    url('./theme/fonts/MinigapLight.woff2') format('woff2');
+  font-family: 'Poppins';
+  src: url('./theme/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'MinigapBold';
-  src: local('MinigapBold'),
-    url('./theme/fonts/MinigapBold.woff') format('woff'),
-    url('./theme/fonts/MinigapBold.woff2') format('woff2');
+  font-family: 'Poppins';
+  src: url('./theme/fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./theme/fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./theme/fonts/Poppins-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
 
 body {
   margin: 0;
   height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 
   #root {
     @include flex(column);
@@ -35,5 +52,15 @@ body {
 
   footer {
     flex-shrink: 0;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
   }
 }

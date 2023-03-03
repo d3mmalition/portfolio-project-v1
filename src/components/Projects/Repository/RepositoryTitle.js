@@ -4,7 +4,7 @@ import {Link, Typography} from '@mui/material';
 import {Box} from '@mui/system';
 
 export default function RepositoryTitle(props) {
-  const {title, updatedDate, url, topics} = props;
+  const {title, img, updatedDate, url, topics} = props;
   const githubPageUrl = 'https://github.com/d3mmalition';
 
   function getUpdatedDate(string) {
@@ -27,6 +27,11 @@ export default function RepositoryTitle(props) {
         <Link href={url} target='_blank' variant='h4'>
           {title}
         </Link>
+      </Box>
+      <Box>
+        <Typography variant='img'>
+          {img}
+        </Typography>
       </Box>
       <Box>
         <Typography variant='body1'>
