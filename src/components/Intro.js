@@ -51,7 +51,12 @@ export default function Intro(props) {
               <p> Take a look at my portfolio to see some of my recent projects and get in touch if you'd like to work together!</p>
             </Typography>
           </Box>
-          
+          <Box>
+            <Typography>
+              Skills
+            </Typography>
+            <MyTools isIpadScreenLess={isIpadScreenLess} />
+          </Box>
         </CardContent>
       </Card>
     </Container>
