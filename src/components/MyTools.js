@@ -51,24 +51,24 @@ export default function MyTools({isIpadScreenLess}) {
             gap: 2,
           }}
         >
-          {/* <ListItem>
-            <img src={cssIcon} alt='CSS Icon' />
-          </ListItem> */}
           <ListItem>
+            <img src={cssIcon} alt='CSS Icon' />
+          </ListItem>
+          {/* <ListItem>
             <img src={sassIcon} alt='Sass Icon' />
           </ListItem>
           <ListItem>
             <img src={tailwindcssIcon} alt='Tailwindcss Icon' />
-          </ListItem>
+          </ListItem> */}
           <ListItem>
             <img src={jqueryIcon} alt='Jquery Icon' id='jquery-fix-width' />
           </ListItem>
           {/* <ListItem>
           <img src={firebaseIcon} alt='Firebase Icon' />
         </ListItem> */}
-          <ListItem>
+          {/* <ListItem>
             <img src={unityIcon} alt='Unity Icon' />
-          </ListItem>
+          </ListItem> */}
         </List>
       </ListItem>
     </List>
