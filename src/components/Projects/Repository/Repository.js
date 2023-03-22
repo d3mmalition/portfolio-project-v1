@@ -59,7 +59,7 @@ export default function Repository(props) {
       >
         
       </Box>
-      {/* <Divider sx={{mb: 4}} /> */}
+      <Divider sx={{mt: -4, mb: 4}} />
       <CardActions
         className='button-container'
         sx={{
