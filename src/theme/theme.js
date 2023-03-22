@@ -8,9 +8,9 @@ import PoppinsSemiBold from './fonts/Poppins-SemiBold.ttf';
 // import {ThemeModeConsumer} from './ThemeModeContext';
 
 // Default CSS
-import '../App.css';
+// import '../App.css';
 
-let defaultTheme = createTheme({
+let lightTheme = createTheme({
   palette: {
     mode: 'light',
     primary: {
@@ -102,4 +102,4 @@ let defaultTheme = createTheme({
   },
 });
 
-export default defaultTheme = responsiveFontSizes(defaultTheme);
+export default lightTheme = responsiveFontSizes(lightTheme);
