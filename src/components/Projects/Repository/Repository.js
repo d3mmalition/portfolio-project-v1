@@ -21,14 +21,14 @@ export default function Repository(props) {
     name,
     description,
     html_url,
-    live_site,
+    homepage,
     updated_at,
     languages_url,
     topics,
   } = props.data;
 
   const githubUrl = html_url;
-  const live_site_url = live_site;
+  const live_site_url = homepage;
 
   // const [languages, setLanguages] = useState({});
   // const [isLoading, setIsLoading] = useState(true);
