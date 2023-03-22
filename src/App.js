@@ -1,6 +1,6 @@
 import React from 'react';
 // Custom Theme
-import defaultTheme from '../src/theme/theme';
+import lightTheme from '../src/theme/theme';
 import {ThemeProvider} from '@mui/material/styles';
 // MUI Components
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 import './App.css';
 
 export default function App() {
-  const isIpadScreenLess = useMediaQuery(defaultTheme.breakpoints.down('md'));
+  const isIpadScreenLess = useMediaQuery(lightTheme.breakpoints.down('md'));
   const headerFooterConfigs = {
     sx: { marginY: 4 },
   };
@@ -23,7 +23,7 @@ export default function App() {
     sx: { marginY: 12, display: 'inline-block' },
   };
   return (
-      <ThemeProvider theme={defaultTheme}>
+      <ThemeProvider theme={lightTheme}>
         <CssBaseline />
         <Container fixed sx={{ fontFamily: 'Poppins' }}>
           <Header configs={headerFooterConfigs} />
