@@ -11,50 +11,48 @@ import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import './Header.css';
 
 export default function Header(props) {
-  const {sx} = props.configs;
+  const { sx } = props.configs;
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  function toggleDarkMode(event) {
-    event.preventDefault();
+  function toggleDarkMode() {
     setIsDarkMode((prevMode) => !prevMode);
-    console.log('Dark mode toggled');
   }
 
   return (
-    <Box component='header' sx={sx}>
+    <Box component="header" sx={sx}>
       <Link
-        variant='h1'
+        variant="h1"
         component={RouterLink}
-        to='/'
-        underline='none'
-        color='primary'
-        sx={{fontSize: '1.5rem !important'}}
+        to="/"
+        underline="none"
+        color="primary"
+        sx={{ fontSize: '1.5rem !important' }}
       >
         emmabuilds.co
       </Link>
-      <MenuList id='header-links' sx={{paddingY: '0 !important', gap: 2}}>
+      <MenuList id="header-links" sx={{ paddingY: '0 !important', gap: 2 }}>
         <ListItem>
-          <Link href='mailto:emma@emmabuilds.co' underline='hover'>
+          <Link href="mailto:emma@emmabuilds.co" underline="hover">
             Contact
           </Link>
         </ListItem>
-         <MenuItem>
-          <Link href='https://drive.google.com/file/d/121NLP9gVw63LWE_gwNgM5jfqnCw2-XxG/view?usp=sharing' underline='hover'>
+        <MenuItem>
+          <Link href="https://drive.google.com/file/d/121NLP9gVw63LWE_gwNgM5jfqnCw2-XxG/view?usp=sharing" underline="hover">
             Resume
           </Link>
         </MenuItem>
         <MenuItem>
-          <Link href='https://www.linkedin.com/in/carrgardnere/' target='_blank' underline='hover'>
+          <Link href="https://www.linkedin.com/in/carrgardnere/" target="_blank" underline="hover">
             LinkedIn
           </Link>
-        </MenuItem> 
-         <MenuItem onClick={toggleDarkMode}>
+        </MenuItem>
+        <MenuItem key="dark-mode-toggle" onClick={toggleDarkMode}>
           {isDarkMode ? (
-            <LightModeIcon color='primary' />
+            <LightModeIcon color="primary" />
           ) : (
-            <DarkModeOutlinedIcon color='secondary' />
+            <DarkModeOutlinedIcon color="secondary" />
           )}
-        </MenuItem> 
+        </MenuItem>
       </MenuList>
     </Box>
   );
