@@ -1,8 +1,8 @@
 const projectDatas = [
-  '/we-love-movies-frontend',
+  '/booking_clone',
   '/rrs-pt-restaurant-reservation',
   '/mod-31-flashcard-app',
-  '/recipe-tracking-app',
+  '/we-love-movies-frontend',
 ];
 
 export default projectDatas;
