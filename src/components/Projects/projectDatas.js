@@ -1,5 +1,5 @@
 const projectDatas = [
-  '/booking_clone',
+  '/bookme',
   '/rrs-pt-restaurant-reservation',
   '/mod-31-flashcard-app',
   '/we-love-movies-frontend',
