@@ -76,7 +76,7 @@ export default function Repository(props) {
           variant='contained'
           startIcon={<HomeIcon />}
         >
-          Live Site
+          Live
         </Button>
         <Button
           href={githubUrl}
