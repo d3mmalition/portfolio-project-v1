@@ -37,7 +37,7 @@ export default function Header(props) {
           </Link>
         </ListItem>
         <MenuItem>
-          <Link href="https://docs.google.com/document/d/1ykOhkgwiPIAzmR3fJxv4Kw9wLekeW8Vj5qtH3JugAbI/edit?usp=share_link" underline="hover">
+          <Link href="https://drive.google.com/file/d/12pRONtj3ZBXSgQhZL2INY2dZD-wNxq6D/view?usp=sharing" underline="hover">
             Resume
           </Link>
         </MenuItem>
