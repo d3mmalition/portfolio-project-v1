@@ -42,7 +42,7 @@ export default function Header(props) {
           </Link>
         </MenuItem>
         <MenuItem>
-          <Link href="https://www.linkedin.com/in/carrgardnere/" target="_blank" underline="hover">
+          <Link href="https://www.linkedin.com/in/ecarrgardner/" target="_blank" underline="hover">
             LinkedIn
           </Link>
         </MenuItem>
