@@ -32,7 +32,7 @@ export default function Header(props) {
       </Link>
       <MenuList id="header-links" sx={{ paddingY: '0 !important', gap: 2 }}>
         <ListItem>
-          <Link href="mailto:emma@emmabuilds.co" underline="hover">
+          <Link href="mailto:ecarr.gardner@gmail.com" underline="hover">
             Contact
           </Link>
         </ListItem>
