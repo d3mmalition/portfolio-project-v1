@@ -65,9 +65,9 @@ export default function MyTools({isIpadScreenLess}) {
             <img src={tailwindcssIcon} alt='Tailwindcss Icon' />
           </ListItem>
          
-          <ListItem>
+          {/* <ListItem>
           <img src={firebaseIcon} alt='Firebase Icon' />
-        </ListItem>
+        </ListItem> */}
           <ListItem>
             <img src={expressIcon} alt='Expressjs Icon' />
           </ListItem>
