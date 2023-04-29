@@ -4,12 +4,12 @@ import React, {useState} from 'react';
 import {Button, Link, List, ListItem, Typography} from '@mui/material';
 
 import javascriptIcon from '../../src/images/dev-tools/javascript.svg';
-import figmaIcon from '../../src/images/dev-tools/figma.svg';
+import nextjsIcon from '../../src/images/dev-tools/nextjs.svg';
 import sassIcon from '../../src/images/dev-tools/sass.svg';
 import reactIcon from '../../src/images/dev-tools/react.svg';
-import unityIcon from '../../src/images/dev-tools/unity.svg';
+import expressIcon from '../../src/images/dev-tools/express.svg';
 import materialuiIcon from '../../src/images/dev-tools/material-ui.svg';
-import jqueryIcon from '../../src/images/dev-tools/jquery.svg';
+import htmlIcon from '../../src/images/dev-tools/html-5.svg';
 import tailwindcssIcon from '../../src/images/dev-tools/tailwindcss.svg';
 import cssIcon from '../../src/images/dev-tools/css-3.svg';
 import firebaseIcon from '../../src/images/dev-tools/firebase.svg';
@@ -26,11 +26,12 @@ export default function MyTools({isIpadScreenLess}) {
         <img src={reactIcon} alt='React Icon' />
       </ListItem>
       <ListItem>
-        <img src={materialuiIcon} alt='Material UI Icon' />
-      </ListItem>
-      <ListItem>
-        <img src={figmaIcon} alt='Figma Icon' />
-      </ListItem>
+            <img src={cssIcon} alt='CSS Icon' />
+          </ListItem>
+           <ListItem>
+            <img src={htmlIcon} alt='html Icon' />
+          </ListItem>
+     
 
       <ListItem>
         <Link
@@ -52,23 +53,24 @@ export default function MyTools({isIpadScreenLess}) {
           }}
         >
           <ListItem>
-            <img src={cssIcon} alt='CSS Icon' />
-          </ListItem>
-          {/* <ListItem>
+        <img src={materialuiIcon} alt='Material UI Icon' />
+      </ListItem>
+           <ListItem>
+        <img src={nextjsIcon} alt='Nextjs' />
+      </ListItem>
+          <ListItem>
             <img src={sassIcon} alt='Sass Icon' />
           </ListItem>
           <ListItem>
             <img src={tailwindcssIcon} alt='Tailwindcss Icon' />
-          </ListItem> */}
-          <ListItem>
-            <img src={jqueryIcon} alt='Jquery Icon' id='jquery-fix-width' />
           </ListItem>
-          {/* <ListItem>
+         
+          <ListItem>
           <img src={firebaseIcon} alt='Firebase Icon' />
-        </ListItem> */}
-          {/* <ListItem>
-            <img src={unityIcon} alt='Unity Icon' />
-          </ListItem> */}
+        </ListItem>
+          <ListItem>
+            <img src={expressIcon} alt='Expressjs Icon' />
+          </ListItem>
         </List>
       </ListItem>
     </List>
