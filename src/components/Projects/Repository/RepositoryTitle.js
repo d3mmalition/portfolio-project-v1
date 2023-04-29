@@ -35,7 +35,7 @@ export default function RepositoryTitle(props) {
       </Box>
       <Box>
         <Typography variant='body1'>
-          Updated on: {getUpdatedDate(updatedDate)}
+          Created on: {getUpdatedDate(updatedDate)}
         </Typography>
         <Typography
           variant='body1'
