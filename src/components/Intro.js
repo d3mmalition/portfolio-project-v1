@@ -14,6 +14,7 @@ import {
 
 // Media & CSS
 
+import profilePicture from '../../src/images/heropicture1.jpg';
 import './Intro.css';
 
 export default function Intro(props) {
@@ -30,11 +31,11 @@ export default function Intro(props) {
           gap: 4,
         }}
       >
-        {/* <CardMedia
+        <CardMedia
           component='img'
-          // image={profilePicture}
+          image={profilePicture}
           sx={{width: 'auto', height: 250}}
-        /> */}
+        />
         <CardContent id='profile-card-detail' sx={{gap: 4}}>
           <Typography>
             Hello, I'm Emma! I'm a US based developer.
