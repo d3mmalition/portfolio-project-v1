@@ -1,2 +1,121 @@
-@font-face{font-family:Poppins;font-style:normal;font-weight:400;src:url(/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf) format("truetype")}@font-face{font-family:Poppins;font-style:normal;font-weight:500;src:url(/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf) format("truetype")}@font-face{font-family:Poppins;font-style:bold;font-weight:600;src:url(/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf) format("truetype")}body{font-family:Poppins,sans-serif;font-weight:300;height:100vh;margin:0}body #root{display:flex;flex-direction:column;height:100%;line-height:1.6rem;text-underline-offset:.25rem}body main{flex:1 0 auto}body main section.MuiContainer-root{padding:0}body footer{flex-shrink:0}header{align-items:center;justify-content:space-between}div#profile-card,header,header ul#header-links{display:flex;flex-direction:row}div#profile-card{place-content:center;place-items:center}div#profile-card div#profile-card-detail{align-items:center;display:flex;flex-direction:column;max-width:100%}div#profile-card div#profile-card-detail *{line-height:1.6rem}div#profile-card svg#favourite-icon{position:absolute}ul#my-tools{display:flex;flex-direction:row;padding:0}ul#my-tools li.MuiListItem-root{padding:0;width:auto}ul#my-tools li.MuiListItem-root img{max-height:32px;max-width:32px}ul#my-tools ul#more-tools{flex-direction:row}ul#my-tools ul#more-tools img#jquery-fix-width{max-width:84px}section#projects-section{display:flex;flex-direction:column}section#projects-section ul.projects-container{display:flex;flex-direction:row}section#projects-section ul.projects-container li{display:block}section#projects-section div.repository-container{display:flex;flex-direction:column}section#projects-section div.repository-container div.button-container,section#projects-section div.repository-container div.repository-language-container,section#projects-section div.repository-container div.title-links{display:flex;flex-direction:row}section#projects-section div.repository-container div.repository-title-container{display:flex;flex-direction:column}section#projects-section div.repository-container div.title-links a{line-height:1.6rem}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  src: url(/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: Poppins;
+  font-style: bold;
+  font-weight: 600;
+  src: url(/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf)
+    format("truetype");
+}
+body {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  height: 100vh;
+  margin: 0;
+}
+body #root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  line-height: 1.6rem;
+  text-underline-offset: 0.25rem;
+}
+body main {
+  flex: 1 0 auto;
+}
+body main section.MuiContainer-root {
+  padding: 0;
+}
+body footer {
+  flex-shrink: 0;
+}
+header {
+  align-items: center;
+  justify-content: space-between;
+}
+div#profile-card,
+header,
+header ul#header-links {
+  display: flex;
+  flex-direction: row;
+}
+div#profile-card {
+  place-content: center;
+  place-items: center;
+}
+div#profile-card div#profile-card-detail {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+div#profile-card div#profile-card-detail * {
+  line-height: 1.6rem;
+}
+div#profile-card svg#favourite-icon {
+  position: absolute;
+}
+ul#my-tools {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+ul#my-tools li.MuiListItem-root {
+  padding: 0;
+  width: auto;
+}
+ul#my-tools li.MuiListItem-root img {
+  max-height: 32px;
+  max-width: 32px;
+}
+ul#my-tools ul#more-tools {
+  flex-direction: row;
+}
+ul#my-tools ul#more-tools img#jquery-fix-width {
+  max-width: 84px;
+}
+section#projects-section {
+  display: flex;
+  flex-direction: column;
+}
+section#projects-section ul.projects-container {
+  display: flex;
+  flex-direction: row;
+}
+section#projects-section ul.projects-container li {
+  display: block;
+}
+section#projects-section div.repository-container {
+  display: flex;
+  flex-direction: column;
+}
+section#projects-section div.repository-container div.button-container,
+section#projects-section
+  div.repository-container
+  div.repository-language-container,
+section#projects-section div.repository-container div.title-links {
+  display: flex;
+  flex-direction: row;
+}
+section#projects-section
+  div.repository-container
+  div.repository-title-container {
+  display: flex;
+  flex-direction: column;
+}
+section#projects-section div.repository-container div.title-links a {
+  line-height: 1.6rem;
+}
 /*# sourceMappingURL=main.017968c0.css.map*/
