@@ -65,8 +65,9 @@ let lightTheme = createTheme({
     },
     jobTitle: {
       fontFamily: 'Poppins',
-      fontSize: '2rem',
+      fontSize: '1.5rem',
       color: 'primary',
+      // fontWeight: 'bold',
     },
     repositoryLanguage: {
       fontFamily: 'Poppins',
