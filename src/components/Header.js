@@ -1,14 +1,15 @@
 /* eslint-disable no-unused-vars */
-import React, {useState} from 'react';
-import {Link as RouterLink} from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
+import { useTheme } from '@mui/material/styles';
 
-import {Link, ListItem, MenuItem, MenuList} from '@mui/material';
-import {Box} from '@mui/system';
+import { Link, ListItem, MenuItem, MenuList } from '@mui/material';
+import { Box } from '@mui/system';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
-
 import './Header.css';
+import { lightTheme, darkTheme } from '../theme/theme';
 
 export default function Header(props) {
   const { sx } = props.configs;

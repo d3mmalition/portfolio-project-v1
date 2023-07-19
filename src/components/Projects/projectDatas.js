@@ -1,8 +1,8 @@
 const projectDatas = [
   '/bookme-clone',
-  '/restaurant-reservation-system',
+  '/FISSP-Project',
   '/WeLoveMovies-frontend',
-  '/react-flashcard-app',
+  '/restaurant-reservation-system',
 ];
 
 export default projectDatas;

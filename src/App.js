@@ -1,10 +1,10 @@
 import React from 'react';
 // Custom Theme
-import lightTheme from '../src/theme/theme';
-import {ThemeProvider} from '@mui/material/styles';
+import { lightTheme, darkTheme } from './theme/theme';
+import { ThemeProvider } from '@mui/material/styles';
 // MUI Components
 import useMediaQuery from '@mui/material/useMediaQuery';
-import {Container, CssBaseline} from '@mui/material';
+import { Container, CssBaseline } from '@mui/material';
 // Components
 import Header from './components/Header';
 import Intro from './components/Intro';
@@ -23,20 +23,20 @@ export default function App() {
     sx: { marginY: 12, display: 'inline-block' },
   };
   return (
-      <ThemeProvider theme={lightTheme}>
-        <CssBaseline />
-        <Container fixed sx={{ fontFamily: 'Poppins' }}>
-          <Header configs={headerFooterConfigs} />
-          <main>
-            <Intro
-              configs={sectionConfigs}
-              id="intro-section"
-              isIpadScreenLess={isIpadScreenLess}
-            />
-            <Projects configs={sectionConfigs} id="projects-section" />
-          </main>
-          <Footer configs={headerFooterConfigs} />
-        </Container>
-      </ThemeProvider>
+    <ThemeProvider theme={lightTheme}>
+      <CssBaseline />
+      <Container fixed sx={{ fontFamily: 'Poppins' }}>
+        <Header configs={headerFooterConfigs} />
+        <main>
+          <Intro
+            configs={sectionConfigs}
+            id="intro-section"
+            isIpadScreenLess={isIpadScreenLess}
+          />
+          <Projects configs={sectionConfigs} id="projects-section" />
+        </main>
+        <Footer configs={headerFooterConfigs} />
+      </Container>
+    </ThemeProvider>
   );
 }
