@@ -1,14 +1,9 @@
-import {createTheme, responsiveFontSizes} from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
-// Seft-hosted fonts
+// Self-hosted fonts
 import PoppinsMedium from './fonts/Poppins-Medium.ttf';
 import PoppinsRegular from './fonts/Poppins-Regular.ttf';
 import PoppinsSemiBold from './fonts/Poppins-SemiBold.ttf';
-
-// import {ThemeModeConsumer} from './ThemeModeContext';
-
-// Default CSS
-// import '../App.css';
 
 let lightTheme = createTheme({
   palette: {
@@ -71,36 +66,42 @@ let lightTheme = createTheme({
     },
     repositoryLanguage: {
       fontFamily: 'Poppins',
-      textTransformation: 'uppercase',
+      textTransform: 'uppercase',
     },
     repositoryDate: {
       // fontFamily: 'PoppinsSemiBold',
-      textTransformation: 'uppercase',
-    },
-  },
-  components: {
-    MuiCssBaseline: {
-      styleOverrides: `
-          @font-face {
-            font-family: 'Poppins';
-            src: url(${PoppinsMedium}) format('truetype'),
-                 url(${PoppinsRegular}) format('truetype'),
-                 url(${PoppinsSemiBold}) format('truetype');
-            font-weight: normal;
-            font-style: normal;
-          }
-        `,
-    },
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          borderRadius: 8,
-          fontFamily: 'Poppins',
-          letterSpacing: 0.75,
-        },
-      },
+      textTransform: 'uppercase',
     },
   },
 });
 
-export default lightTheme = responsiveFontSizes(lightTheme);
+let darkTheme = createTheme(lightTheme, {
+  palette: {
+    mode: 'dark',
+    primary: {
+      main: '#1E90FF',
+    },
+    secondary: {
+      main: '#129277',
+    },
+    info: {
+      main: '#FFAABE',
+    },
+    error: {
+      main: '#ff1744',
+    },
+    warning: {
+      main: '#ff9800',
+    },
+    success: {
+      main: '#129277',
+    },
+    // divider: 'rgba(253,81,12,0.4)',
+  },
+  // Additional overrides specific to the dark mode
+});
+
+lightTheme = responsiveFontSizes(lightTheme);
+darkTheme = responsiveFontSizes(darkTheme);
+
+export { lightTheme, darkTheme };

@@ -1,10 +1,10 @@
 import React from 'react';
-import {useState} from 'react';
+import { useState } from 'react';
 
-const {Provider, Consumer} = React.createContext();
+const ThemeModeContext = React.createContext();
 
-export default function ThemeModeProvider() {
-  const {themeMode, setThemeMode} = useState('light');
+export default function ThemeModeProvider({ children }) {
+  const [themeMode, setThemeMode] = useState('light');
 
   function toggleDarkMode() {
     setThemeMode((prevMode) => {
@@ -12,7 +12,11 @@ export default function ThemeModeProvider() {
     });
   }
 
-  return <Provider value={{themeMode, toggleDarkMode}}></Provider>;
+  return (
+    <ThemeModeContext.Provider value={{ themeMode, toggleDarkMode }}>
+      {children}
+    </ThemeModeContext.Provider>
+  );
 }
 
-export {ThemeModeProvider, Consumer as ThemeModeConsumer};
+export const ThemeModeConsumer = ThemeModeContext.Consumer;
